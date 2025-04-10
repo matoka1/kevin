@@ -1,12 +1,3 @@
-from zipfile import ZipFile
-from pathlib import Path
-
-# Create folder structure and files
-project_root = Path("/mnt/data/login_signup_demo")
-project_root.mkdir(parents=True, exist_ok=True)
-
-# HTML: signup.html
-(project_root / "signup.html").write_text("""
 <!DOCTYPE html>
 <html lang="en">
 <head>
