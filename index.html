@@ -169,10 +169,3 @@ a {
 }
 """)
 
-# Create zip file
-zip_path = "/mnt/data/login_signup_demo.zip"
-with ZipFile(zip_path, 'w') as zipf:
-    for file in project_root.glob("**/*"):
-        zipf.write(file, file.relative_to(project_root))
-
-zip_path
